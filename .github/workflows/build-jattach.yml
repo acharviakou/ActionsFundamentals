@@ -15,6 +15,7 @@ jobs:
           tree
           cd jattach
           make
+          chmod +x build/jattach
           tree
       
       - name: Upload artifact
