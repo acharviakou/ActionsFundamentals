@@ -9,12 +9,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - name: Checkout another repository
-        uses: actions/checkout@v4
-        with:
-          repository: https://github.com/jattach/jattach.git
-
-      - name: List files in the repository
+      - name: Build jattach
         run: |
-          echo "The repository ${{ github.repository }} contains the following files:"
+          git clone https://github.com/jattach/jattach.git
           tree
