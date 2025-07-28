@@ -13,3 +13,5 @@ jobs:
         run: |
           git clone https://github.com/jattach/jattach.git
           tree
+          cd jattach
+          make
